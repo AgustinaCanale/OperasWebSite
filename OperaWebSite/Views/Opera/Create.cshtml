@@ -21,6 +21,12 @@
         <p>
             @Html.LabelFor(model=>model.Composer)
             @Html.TextBoxFor(model=>model.Composer)
+            @Html.ValidationMessageFor(model=>model.Composer)
+        </p>
+
+        <p>
+            @Html.LabelFor(model=>model.Year)
+            @Html.TextBoxFor(model=>model.Year)
             @Html.ValidationMessageFor(model=>model.Year)
         </p>
 
