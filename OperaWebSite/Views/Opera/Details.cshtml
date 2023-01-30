@@ -1,0 +1,32 @@
+﻿@model OperaWebSite.Models.Opera
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <h2>Ver Detalle</h2>
+    @Html.ActionLink("Volver a index","Index","Opera")
+    <p>
+        @Html.DisplayNameFor(model=>model.Title)
+        @Html.DisplayFor(model=>model.Title)
+
+
+    </p>
+
+    <p>
+        @Html.DisplayNameFor(model=>model.Composer)
+        @Html.DisplayFor(model=>model.Composer)
+    </p>
+    <p>
+        @Html.DisplayNameFor(model=>model.Year)
+        @Html.DisplayFor(model=>model.Year)
+    </p>
+
+
+
+</body>
+</html>
